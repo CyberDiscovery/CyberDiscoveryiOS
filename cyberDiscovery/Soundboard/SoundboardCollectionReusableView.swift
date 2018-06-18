@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectionReusableView: UICollectionReusableView {
+class SoundboardCollectionReusableView: UICollectionReusableView {
     @IBOutlet weak var sectionHeaderlabel: UITextView!
         
     override func awakeFromNib() {

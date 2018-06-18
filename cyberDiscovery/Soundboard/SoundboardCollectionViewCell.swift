@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+class SoundboardCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var name: UITextView!
     var audioUrl: String = ""

@@ -13,6 +13,7 @@ import FirebaseDatabase
 class EventsTableViewController: UITableViewController {
     var ref:DatabaseReference!
     var events = [eventStruct]()
+    var timer: Timer?
     
     struct eventStruct {
         let name: String!
@@ -21,7 +22,8 @@ class EventsTableViewController: UITableViewController {
         let subtext: String!
     }
     
-    func loadEvents() {
+    @objc func loadEvents() {
+        self.events.removeAll()
         ref = Database.database().reference()
         ref.child("Events").observeSingleEvent(of: .value, with: { (snapshot) in
             let value = snapshot.value as? NSDictionary
@@ -62,6 +64,14 @@ class EventsTableViewController: UITableViewController {
         self.tableView.allowsSelection = false
         
         loadEvents()
+        
+        // update view every minute.
+        timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(self.loadEvents), userInfo: nil, repeats: true)    
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        timer?.invalidate()
     }
 
 
@@ -96,5 +106,6 @@ class EventsTableViewController: UITableViewController {
         cell.subtext.text = events[indexPath.row].subtext
         cell.time.text = events[indexPath.row].countdown
         return cell
-    }    
+    }
+    
 }

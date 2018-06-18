@@ -13,11 +13,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="408" id="KGk-i7-Jjw" customClass="EventTableViewCell" customModule="cyberDiscovery" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="408" height="408"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="320" id="KGk-i7-Jjw" customClass="EventTableViewCell" customModule="cyberDiscovery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="408" height="320"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="408" height="407.66666666666669"/>
+                <rect key="frame" x="0.0" y="0.0" width="408" height="319.66666666666669"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testImage" translatesAutoresizingMaskIntoConstraints="NO" id="obm-Rn-bnE" userLabel="headerImage">
@@ -53,11 +53,11 @@
                     <constraint firstAttribute="trailing" secondItem="3Xd-LB-bdH" secondAttribute="trailing" constant="8" id="CF3-6o-1Zm"/>
                     <constraint firstItem="nkY-x0-7Tr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="KEh-cN-lw4"/>
                     <constraint firstItem="JM4-XX-fE2" firstAttribute="top" secondItem="nkY-x0-7Tr" secondAttribute="bottom" constant="8" id="LXa-Cz-0dj"/>
+                    <constraint firstAttribute="bottom" secondItem="JM4-XX-fE2" secondAttribute="bottom" constant="6.6666666666666856" id="NgO-RC-cjt"/>
                     <constraint firstItem="nkY-x0-7Tr" firstAttribute="leading" secondItem="3Xd-LB-bdH" secondAttribute="leading" id="OWj-Yt-Lhh"/>
                     <constraint firstItem="obm-Rn-bnE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Psb-fI-CPR"/>
                     <constraint firstItem="nkY-x0-7Tr" firstAttribute="trailing" secondItem="3Xd-LB-bdH" secondAttribute="trailing" id="VPM-Qg-1CN"/>
                     <constraint firstItem="JM4-XX-fE2" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="8" id="Xzf-Yn-qSt"/>
-                    <constraint firstAttribute="bottom" secondItem="nkY-x0-7Tr" secondAttribute="bottom" constant="144.66666666666669" id="Ycr-8I-HNb"/>
                     <constraint firstItem="nkY-x0-7Tr" firstAttribute="top" secondItem="3Xd-LB-bdH" secondAttribute="bottom" id="bfp-gJ-Frw"/>
                     <constraint firstItem="3Xd-LB-bdH" firstAttribute="top" secondItem="obm-Rn-bnE" secondAttribute="bottom" constant="24" id="fzf-Qe-425"/>
                     <constraint firstItem="3Xd-LB-bdH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="oGA-kU-x1j"/>
@@ -73,7 +73,7 @@
                 <outlet property="subtext" destination="nkY-x0-7Tr" id="B0O-jZ-D4x"/>
                 <outlet property="time" destination="JM4-XX-fE2" id="JPh-Yp-4y6"/>
             </connections>
-            <point key="canvasLocation" x="-216" y="157"/>
+            <point key="canvasLocation" x="-216" y="113"/>
         </tableViewCell>
     </objects>
     <resources>

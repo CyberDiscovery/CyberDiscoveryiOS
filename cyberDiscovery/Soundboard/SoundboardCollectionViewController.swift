@@ -13,7 +13,7 @@ import AVFoundation
 
 private let reuseIdentifier = "SBCell"
 
-class CollectionViewController: UICollectionViewController {
+class SoundboardCollectionViewController: UICollectionViewController {
     
     var ref:DatabaseReference!
     
@@ -127,7 +127,7 @@ class CollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        if let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath) as? CollectionReusableView{
+        if let sectionHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "SectionHeader", for: indexPath) as? SoundboardCollectionReusableView{
             sectionHeader.sectionHeaderlabel.text = "\(self.tabs[indexPath.section])"
             return sectionHeader
         }
@@ -138,7 +138,7 @@ class CollectionViewController: UICollectionViewController {
         // Configure the cell
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SBCell",
-                                                 for: indexPath) as! CollectionViewCell
+                                                 for: indexPath) as! SoundboardCollectionViewCell
         
         //Change based on tab selected
         cell.name.text = sounds[tabs[indexPath.section]]![indexPath.row].name
@@ -156,7 +156,7 @@ class CollectionViewController: UICollectionViewController {
         
         if let index = indexPath {
             //get cell
-            let cell = collectionView?.cellForItem(at: index) as! CollectionViewCell
+            let cell = collectionView?.cellForItem(at: index) as! SoundboardCollectionViewCell
             //play audio
             let url = URL(string: cell.audioUrl)
             
