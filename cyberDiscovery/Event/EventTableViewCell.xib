@@ -20,7 +20,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="408" height="407.66666666666669"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testImage" translatesAutoresizingMaskIntoConstraints="NO" id="obm-Rn-bnE" userLabel="headerImage">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testImage" translatesAutoresizingMaskIntoConstraints="NO" id="obm-Rn-bnE" userLabel="headerImage">
                         <rect key="frame" x="20" y="11" width="368" height="153"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="153" id="Zhh-R8-BAM"/>
